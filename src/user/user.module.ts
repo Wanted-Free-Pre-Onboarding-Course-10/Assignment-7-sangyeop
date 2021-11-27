@@ -9,9 +9,9 @@ import { UserService } from './user.service';
 @Module({
   imports: [PassportModule.register({ defaultStrategy: 'jwt' }),
     JwtModule.register({
-    secret: 'secret',
+    secret: process.env.JWT_SECRET,
     signOptions: {
-      expiresIn:60*60
+      expiresIn:process.env.JWT_EXPIRES
     }
   }),TypeOrmModule.forFeature([UserRepository])],
   controllers: [UserController],
