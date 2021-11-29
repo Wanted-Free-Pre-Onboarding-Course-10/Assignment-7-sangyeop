@@ -11,7 +11,7 @@ import { UserService } from './user.service';
     JwtModule.register({
     secret: process.env.JWT_SECRET,
     signOptions: {
-      expiresIn:process.env.JWT_EXPIRES
+      expiresIn:60*60
     }
   }),TypeOrmModule.forFeature([UserRepository])],
   controllers: [UserController],
