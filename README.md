@@ -125,6 +125,7 @@
 
 
 
+
 ## 사용 스택
 
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white" />&nbsp;
@@ -136,28 +137,22 @@
 
 
 
-## DB 스키마
-
 
 
 ## API
-[API문서]()
+[API문서](https://documenter.getpostman.com/view/15919456/UVC3jnu9)
 
 ## API 테스트
-1. 우측 링크를 클릭해서 postman으로 들어갑니다.[링크]() 
-2. 정의된 server가 올바른지 확인 합니다.()
-
-
-
-
-3. 이후, API 테스트를 시도해 주세요.
+배포 실패로 로컬에서 부탁드립니다.
+1. 우측 링크를 클릭해서 postman으로 들어갑니다.[링크](https://www.postman.com/martian-satellite-348039/workspace/cardoc/overview) 
+2. 테스트를 해주세요
 
 ## 설치 및 실행 방법
 
 ### 프로젝트 설치
 
 ```
-git clone 
+git clone https://github.com/Wanted-Free-Pre-Onboarding-Course-10/Assignment-7-sangyeop.git
 
 ```
 
