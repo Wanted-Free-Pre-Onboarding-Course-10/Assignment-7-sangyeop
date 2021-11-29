@@ -6,7 +6,7 @@ config();
 export const typeOrmConfig: SqliteConnectionOptions = {
   type: 'sqlite',
   database: process.env.DATABASE,
-  entities: [__dirname + '/../**/*.entity.{js, ts}'],
+  entities: [__dirname + '/../**/*.entity.js'],
   synchronize: true,
   logging: true,
 };
