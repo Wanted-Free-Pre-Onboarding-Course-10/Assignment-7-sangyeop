@@ -1,5 +1,7 @@
-import { BeforeInsert, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { BeforeInsert, Column, Entity, JoinColumn, ManyToMany, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
 import * as bcrypt from 'bcrypt';
+import { Trim } from "src/trim/trim.entity";
+import { Tire } from "src/tire/tire.entity";
 
 @Entity('USER')
 export class User {
@@ -11,6 +13,11 @@ export class User {
 
   @Column({nullable:false})
   password: string;
+
+  @ManyToOne(() => Trim, trim => trim.users)
+  @JoinColumn({name:'ref_trimId'})
+  trim: number
+  
 
   @BeforeInsert()
   async createPassword(password: string) {
